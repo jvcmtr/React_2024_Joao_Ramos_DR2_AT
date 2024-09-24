@@ -1,0 +1,40 @@
+=DESENVOLVER O COMPONENTE FetchData:
+1. Crie um componente FetchData que faça chamadas para a API JSONPlaceholder (Documentação: https://jsonplaceholder.typicode.com/guide/) e obtenha dados dos seguintes endpoints:
+
+/users
+Endpoint: https://jsonplaceholder.typicode.com/users
+/posts
+Endpoint: https://jsonplaceholder.typicode.com/posts/?userId={userId}
+/comments
+Endpoint:https://jsonplaceholder.typicode.com/comments?postId={postId}
+
+=PÁGINA INICIAL:
+2. Desenvolva o componente principal da aplicação (App.js) incluindo elementos básicos (como <header>, <main>, <footer>) e garanta que a estrutura seja renderizada corretamente na página.
+
+=EXIBIÇÃO DE USUÁRIOS:
+3. A página inicial deve exibir a lista de usuários com as seguintes informações mínimas:
+name: Nome do usuário.
+company.catchPhrase: Frase de destaque da empresa do usuário.
+
+Cada usuário deve ser exibido em um componente User estilizado como cartão em layout de grade .
+
+=EXIBIÇÃO DE POSTS DO USUÁRIO:
+4. Ao clicar em um usuário, a aplicação deve ocultar os demais usuários e exibir as postagens (posts) do usuário selecionado.
+
+Cada post deve ser exibido em um componente Post com as seguintes informações:
+title: Título da postagem.
+body: Corpo do texto da postagem.
+
+=EXIBIÇÃO DE COMENTÁRIOS:
+5. Ao clicar em uma postagem, a aplicação deve exibir os comentários associados ao post selecionado.
+Cada comentário deve ser exibido em um componente Comment com as seguintes informações:
+name: Apresentar apenas o primeiro e último nome do autor
+email: Transformar em @user ex. Lew@alysha.tv => @lew
+body: Corpo do texto do comentário limitado a 140 caracteres
+
+=FUNCIONALIDADES ADICIONAIS:
+6. O usuário deve poder retornar à página anterior em todas as etapas da navegação. Adicione uma barra de navegação para facilitar a navegação entre os níveis de dados.
+7. Crie um botão que permita o usuário alternar a exibição do layout de grade  para lista 
+8. Inclua um ícone na exibição do comentário que permita o usuário excluir um comentário inapropriado.
+9. Confirme a ação de exclusão de modo que o usuário tenha uma etapa adicional de confirmação antes de excluir o comentário.
+10. A interface deve ser estilizada usando CSS para proporcionar uma experiência agradável ao usuário.
