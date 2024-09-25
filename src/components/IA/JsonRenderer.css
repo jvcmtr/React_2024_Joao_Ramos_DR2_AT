@@ -1,0 +1,33 @@
+/*
+    ESTILIZAÇÃO FEITA POR IA
+    só mudei as cores e o tamanho da fonte
+*/
+
+.json-renderer {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  .json-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .json-table th,
+  .json-table td {
+    border: 1px solid #404040;
+    padding: 5px;
+    text-align: left;
+    font-size: 'smaller';
+  }
+  
+  .json-table th {
+    background-color: #606060;
+  }
+  
+  .json-table tr:nth-child(even) {
+    background-color: #202020;
+  }
+  .json-table td {
+    vertical-align: top;
+  }
