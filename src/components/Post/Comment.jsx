@@ -29,7 +29,7 @@ export default function Comment(props){
                 <DelButton onClick={deleteComment}> Excluir </DelButton>
             </div>
             <b style={header}>{props.comment.name}</b> 
-            <p style={textStyle}>{props.comment.body}</p>
+            <p style={textStyle}>{props.comment.body.substring(0, 140)}</p>
             <i style={name}>{formatarEmail(props.comment.email)} </i>
             {
                 deleting? 
