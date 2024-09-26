@@ -1,5 +1,5 @@
 import colors from '../palete.js'
-import Button from '../components/Button.jsx'
+import Button from '../components/Buttons/Button.jsx'
 
 export default function Footer(props){
     return (
@@ -26,8 +26,8 @@ const footerStyle={
     gap:' 10vw',
     padding:' 10px',
     
-    backgroundCollor: colors.secondary,
-    fontColor: colors.fontDim,
+    backgroundColor: colors.secondary,
+    color: colors.fontDim, 
     fontSize: 'small',
     fontWeight: '600'
 }

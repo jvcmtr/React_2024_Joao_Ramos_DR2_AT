@@ -1,6 +1,7 @@
 import colors from '../palete.js'
 import React from 'react'
 import pages from '../pages/PagesMap.js'
+import ControllPannel from '../components/ControlPannel.jsx'
 
 export default function Main(props){
     const [currentTab, setTab] = React.useState()
@@ -15,6 +16,7 @@ export default function Main(props){
 
     return (
         <div>
+            <ControllPannel/>
             {currentTab? 
                 currentTab: (<h3> Carregando ... </h3>)
             }

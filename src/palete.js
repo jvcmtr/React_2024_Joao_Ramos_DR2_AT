@@ -1,13 +1,14 @@
 
 
 const colorPalete = {
-    font :"#ffffff",
-    fontDim : "#909090",
-    primary: "#202020",
-    secondary: "#303030",
-    terciary: "#101010",
-    highlight: "#0060ff",
-    highlightDim: "#003090",
+    font :"var(--font )",
+    fontDim : "var(--fontDim )",
+    primary: "var(--primary )",
+    secondary: " var(--secondary)",
+    terciary: "var(--terciary )",
+    highlight: "var(--highlight )",
+    highlightDim: "var(--highlightDim )",
+    highlightContrast: "var(--highlightContrast )"
 }
 
 export default colorPalete 

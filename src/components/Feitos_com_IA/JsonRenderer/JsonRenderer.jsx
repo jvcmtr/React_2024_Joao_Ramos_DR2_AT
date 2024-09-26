@@ -92,7 +92,7 @@ export default JsonRenderer;
 
 
 
-
+//  VERSÃO ANTIGA, HAVIA PEDIDO PARA A IA TRANSFORMAR LISTAS EM <ul>
 // import React from 'react';
 
 // // COMPONENTE FEITO POR IA

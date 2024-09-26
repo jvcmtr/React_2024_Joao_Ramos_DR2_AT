@@ -11,5 +11,28 @@
 
 body{
   margin:0;
-  color: #eee
 }
+
+.light *{
+  --font :#202020;
+  --fontDim : #353535;
+  --primary: #bbbbbb;
+  --secondary: #ffffff;
+  --terciary: #ccccff;
+  --highlight: #0060ff;
+  --highlightDim: #003090;
+  --highlightContrast: #dddddd;
+}
+
+.dark *{
+  --font :#ffffff;
+  --fontDim : #aaaaaa;
+  --primary: #202020;
+  --secondary: #303030;
+  --terciary: #101010;
+  --highlight: #0060ff;
+  --highlightDim: #003090;
+  --highlightContrast: #eeeeee;
+}
+
+

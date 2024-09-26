@@ -2,7 +2,6 @@ import { useState } from 'react'
 import './App.css'
 import colors from './palete'
 
-import FetchData from './components/FetchData'
 import Header from './layoutComponents/Header'
 import Footer from './layoutComponents/Footer'
 import Main from './layoutComponents/Main'

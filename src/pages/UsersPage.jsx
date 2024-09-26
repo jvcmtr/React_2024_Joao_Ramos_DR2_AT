@@ -1,7 +1,8 @@
+import './PageLayout.css'
 import {useEffect, useState} from 'react'
 import ApiService from '../services/ApiService'
-import JsonRenderer from '../components/IA/JsonRenderer';
-import UserSumaryCard from '../components/UserSumaryCard';
+import JsonRenderer from '../components/Feitos_com_IA/JsonRenderer/JsonRenderer';
+import UserSumaryCard from '../components/User/UserSumaryCard';
  
 export default function UsersPage(props) {
   const [users, setUsers] = useState([]);
@@ -16,20 +17,13 @@ export default function UsersPage(props) {
   }
 
   return (
-    <div style={pageStyle}>
+    <div id='layout' className='grid'>
       {users.map(u => (
-        <UserSumaryCard user={u}/>
+        <UserSumaryCard 
+          onClick={()=>props.changePage(props.pages.userDetails, {user: u} )}
+          user={u}/>
       ))}
     </div>
   )
-}
-
-const pageStyle = { 
-  display:'grid',
-  gridTemplateColumns: 'repeat(auto-fill, minmax(350px, 1fr))',
-  gridAutoRows: 'minmax(120px, 180fr)',
-  padding: '25px',
-  gap: '20px'
-
 }
 
